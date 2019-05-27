@@ -8,9 +8,8 @@ import "../styles/global.less"
 export default () => (
   <div>
     <HeaderBanner />
-    <SkillsIntro/>
+    <SkillsIntro />
     <CaseStudy />
-    <p className="division">WILLIAM LAI JIANG</p>
-    <SkillTree/>
+    <SkillTree />
   </div>
 )

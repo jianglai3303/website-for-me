@@ -32,17 +32,17 @@ export default class HeaderBanner extends React.Component {
               <img src="/images/twitter.png" />
             </a>
           </p>
-        </div>
-        <div className="right--triangle--area">
-          <svg height="0" width="0">
-            <defs>
-              <clipPath clipPathUnits="objectBoundingBox" id="cp">
-                <path d="M0.500, 0.945 L0.994, 0.090 L0.006, 0.090 L0.500, 0.945 L0.500, 0.650 L0.262, 0.238 L0.738, 0.237 L0.500, 0.650z" />
-              </clipPath>
-            </defs>
-          </svg>
-          <div className="triangle first" />
-          <div className="triangle second" />
+          <div className="right--triangle--area">
+            <svg height="0" width="0">
+              <defs>
+                <clipPath clipPathUnits="objectBoundingBox" id="cp">
+                  <path d="M0.500, 0.945 L0.994, 0.090 L0.006, 0.090 L0.500, 0.945 L0.500, 0.650 L0.262, 0.238 L0.738, 0.237 L0.500, 0.650z" />
+                </clipPath>
+              </defs>
+            </svg>
+            <div className="triangle first" />
+            <div className="triangle second" />
+          </div>
         </div>
       </div>
     )

@@ -1,40 +1,55 @@
+@keyframes show-line {
+  from {
+    width: 0;
+  }
+  to {
+    width: 40px;
+  }
+}
+
 .Head--Banner {
-    background: #282828;
-    height: 800px;
-    position: relative;
-  }
-  .triangle {
-    // The actual clipping effect
-    clip-path: url(#cp);
-  
-    // Keep it proportional
-    width: 100%;
-    height: 100%;
-  
-    // Add the styling
-    background-size: cover;
-    background-blend-mode: screen;
-  
-    // Center them
-    position: absolute;
-    top: 50%;
-    left: 50%;
-  }
-  
-  .first {
-    background-color: #df412c;
-    background-image: url("https://media.giphy.com/media/pE6GG0V2JCKUo/giphy.gif");
-  
-    transform: translateX(-65%) translateY(-50%);
-    opacity: 0.8;
-  }
-  
-  .second {
-    background-color: #282828;
-    background-image: url("https://cdn.ventmere.com/edifier-dev/uploads/2019-04/gitf2.gif?v=1");
-    transform: translateX(-35%) translateY(-50%);
-    opacity: 0.3;
-  }
+  background: #282828;
+  height: 800px;
+  position: relative;
+}
+.triangle {
+  // The actual clipping effect
+  clip-path: url(#cp);
+
+  // Keep it proportional
+  width: 100%;
+  height: 100%;
+
+  // Add the styling
+  background-size: cover;
+  background-blend-mode: screen;
+
+  // Center them
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+
+.first {
+  background-color: #df412c;
+  background-image: url("https://media.giphy.com/media/pE6GG0V2JCKUo/giphy.gif");
+
+  transform: translateX(-65%) translateY(-50%);
+  opacity: 0.8;
+}
+
+.second {
+  background-color: #282828;
+  background-image: url("https://cdn.ventmere.com/edifier-dev/uploads/2019-04/gitf2.gif?v=1");
+  transform: translateX(-35%) translateY(-50%);
+  opacity: 0.3;
+}
+
+.content-wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  border: 1px solid transparent;
+  position: relative;
   .right--triangle--area {
     position: absolute;
     right: 10%;
@@ -45,73 +60,71 @@
     max-width: 450px;
     max-height: 450px;
   }
-  .content-wrapper {
-    max-width: 1200px;
-    margin: 0 auto;
-    border: 1px solid transparent;
-    .intro-greet {
-      span {
-        font-size: 40px;
-        display: block;
-        color: white;
-        font-weight: 100;
-      }
-      margin: 12.5% 0 2%;
+  .intro-greet {
+    span {
+      font-size: 40px;
+      display: block;
+      color: white;
+      font-weight: 100;
     }
-    .intro--me {
+    margin: 12.5% 0 2%;
+  }
+  .intro--me {
+    position: relative;
+    &::after {
+      content: "";
+      width: 0px;
+      border-top: 2px solid white;
+      position: absolute;
+      top: 15px;
+      left: -35px;
+      animation: show-line 1s ease-in forwards;
+    }
+    span {
+      display: block;
+      color: white;
+      font-size: 60px;
+      font-weight: 500;
+      line-height: 60px;
+    }
+    .intro--me--first {
+      font-size: 70px;
+    }
+    margin: 0;
+  }
+  .intro--description {
+    width: 390px;
+    font-size: 19px;
+    line-height: 30px;
+    color: white;
+    margin-top: 10%;
+    font-weight: 200;
+    text-transform: capitalize;
+  }
+  .intro--name {
+    font-size: 70px;
+    line-height: 70px;
+    color: #df412c;
+    font-weight: 200;
+    margin: 0;
+    span {
       position: relative;
       &::after {
         content: "";
-        width: 40px;
-        border-top: 2px solid white;
+        width: 0px;
+        border-top: 3px solid white;
         position: absolute;
-        top: 15px;
-        left: -35px;
-      }
-      span {
-        display: block;
-        color: white;
-        font-size: 60px;
-        font-weight: 500;
-        line-height: 60px;
-      }
-      .intro--me--first {
-        font-size: 70px;
-      }
-      margin: 0;
-    }
-    .intro--description {
-      width: 390px;
-      font-size: 19px;
-      line-height: 30px;
-      color: white;
-      margin-top: 10%;
-      font-weight: 200;
-      text-transform: capitalize;
-    }
-    .intro--name {
-      font-size: 70px;
-      line-height: 70px;
-      color: #df412c;
-      font-weight: 200;
-      margin: 0;
-      span {
-        position: relative;
-        &::after {
-          content: "";
-          width: 40px;
-          border-top: 3px solid white;
-          position: absolute;
-          top: 35px;
-          right: -50px;
-        }
-      }
-    }
-    .contact {
-      font-size: 0;
-      img {
-        height: 40px;
-        margin-right: 20px;
+        top: 35px;
+        right: -50px;
+        animation: show-line 1s ease-in forwards;
       }
     }
   }
+  .contact {
+    font-size: 0;
+    img {
+      height: 40px;
+      margin-right: 20px;
+    }
+  }
+}

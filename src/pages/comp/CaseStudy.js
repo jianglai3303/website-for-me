@@ -1,9 +1,9 @@
 import React from "react"
 import "../../styles/case-study.less"
-import "../../../node_modules/slick-carousel/slick/slick.css"; 
-import "../../../node_modules/slick-carousel/slick/slick-theme.css";
-import Slider from "react-slick";
-import { Waypoint } from 'react-waypoint';
+import "../../../node_modules/slick-carousel/slick/slick.css"
+import "../../../node_modules/slick-carousel/slick/slick-theme.css"
+import Slider from "react-slick"
+import { Waypoint } from "react-waypoint"
 class CaseStudyItem extends React.Component {
   render() {
     return (
@@ -26,15 +26,14 @@ class CaseStudyItem extends React.Component {
   }
 }
 export default class CaseStudy extends React.Component {
-  constructor(props){
-    super(props);
-    this.state ={showClass: ''}
+  constructor(props) {
+    super(props)
+    this.state = { showClass: "" }
   }
-  beforeSwipe(){
-  }
-  enterSection(){
+  beforeSwipe() {}
+  enterSection() {
     this.setState({
-      showClass: 'show-title'
+      showClass: "show-title",
     })
   }
   render() {
@@ -48,7 +47,8 @@ export default class CaseStudy extends React.Component {
         number: "01",
         img: "/images/edifier.png",
         url: "https://www.edifier.com/us/en",
-      },{
+      },
+      {
         key: "ventmere",
         title: "Ventmere Website",
         subtitle: "Branding",
@@ -57,7 +57,8 @@ export default class CaseStudy extends React.Component {
         number: "02",
         img: "/images/vmg.png",
         url: "https://ventmere.com",
-      },{
+      },
+      {
         key: "ventray",
         title: "Ventray Website",
         subtitle: "Website UX Optimization * Functions Development",
@@ -66,10 +67,10 @@ export default class CaseStudy extends React.Component {
         number: "03",
         img: "/images/ventray.png",
         url: "https://www.ventray.com/en-ca",
-      }
+      },
     ]
     const casesList = cases.map(v => {
-      return <CaseStudyItem data={v} key={v.key}/>
+      return <CaseStudyItem data={v} key={v.key} />
     })
     const settings = {
       dots: false,
@@ -81,21 +82,25 @@ export default class CaseStudy extends React.Component {
       autoplay: true,
       autoplaySpeed: 5000,
       pauseOnHover: false,
-      fade: true
-    };
+      fade: true,
+    }
     return (
       <div className="case-study">
         <Waypoint bottomOffset="200px" onEnter={this.enterSection.bind(this)}>
-          <div className={'corner-mark ' +this.state.showClass}>
+          <div className={"corner-mark " + this.state.showClass}>
             <h2 className="mark-title">Developer</h2>
-            <h3 className="mark-meaning">CASES LIST<span className="cover"></span></h3>
-            <p>international / tech / fashion<span className="cover"></span></p>
+            <h3 className="mark-meaning">
+              CASES LIST<span className="cover" />
+            </h3>
+            <p>
+              international / tech / fashion<span className="cover" />
+            </p>
           </div>
         </Waypoint>
         <ul>
-        <Slider {...settings} beforeChange={this.beforeSwipe}>
-        {casesList}
-        </Slider>
+          <Slider {...settings} beforeChange={this.beforeSwipe}>
+            {casesList}
+          </Slider>
         </ul>
       </div>
     )
