@@ -1,0 +1,58 @@
+.skills-tree {
+    background: rgb(208, 0, 12);
+    margin: 200px 0 0;
+    height: 400px;
+    .skills-tree-wrapper {
+      max-width: 1200px;
+      position: relative;
+      margin: 0 auto;
+      color: white;
+      .skills-tree-title {
+        font-size: 46px;
+        color: white;
+        font-weight: 300;
+        position: absolute;
+        left: 0;
+        top: 0;
+        line-height: 80px;
+      }
+      height: 100%;
+      &::before {
+        position: absolute;
+        content: "";
+        display: block;
+        width: 80%;
+        height: 90%;
+        top: -20%;
+        left: 20%;
+        border: 8px solid rgba(22, 22, 22, 0.1);
+      }
+      .right-list {
+        margin-left: 300px;
+        padding-top: 64px;
+        display: flex;
+        .skills-column {
+          flex: 1;
+          h3 {
+            margin-top: 0;
+            font-size: 26px;
+            border-left: 2px solid white;
+            padding-left: 30px;
+          }
+          ul {
+            list-style: none;
+            padding: 0;
+            padding-left: 30px;
+            width: 80%;
+            li {
+              list-style: none;
+              margin: 10px 0;
+              list-style: none;
+              font-size: 15px;
+            }
+          }
+        }
+      }
+    }
+  }
+  

@@ -17,7 +17,10 @@
     "gatsby-plugin-less": "^2.0.13",
     "less": "^3.9.0",
     "react": "^16.8.6",
-    "react-dom": "^16.8.6"
+    "react-dom": "^16.8.6",
+    "react-slick": "^0.24.0",
+    "react-waypoint": "^9.0.2",
+    "slick-carousel": "^1.8.1"
   },
   "devDependencies": {
     "prettier": "^1.17.1"

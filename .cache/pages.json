@@ -15,6 +15,16 @@
         "path": "/comp/HeadBanner/"
     },
     {
+        "componentChunkName": "component---src-pages-comp-skill-tree-js",
+        "jsonName": "comp-skill-tree-a1b",
+        "path": "/comp/SkillTree/"
+    },
+    {
+        "componentChunkName": "component---src-pages-comp-skills-intro-js",
+        "jsonName": "comp-skills-intro-eed",
+        "path": "/comp/SkillsIntro/"
+    },
+    {
         "componentChunkName": "component---cache-dev-404-page-js",
         "jsonName": "dev-404-page-5f9",
         "path": "/dev-404-page/"

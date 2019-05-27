@@ -1,4 +1,5 @@
 import React from "react"
+import "../../styles/head-banner.less"
 export default class HeaderBanner extends React.Component {
   render() {
     return (
