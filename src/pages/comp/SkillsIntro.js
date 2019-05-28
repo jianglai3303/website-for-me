@@ -20,7 +20,7 @@ export default class SkillsIntro extends React.Component {
                     </li>
                     <li><img src="//cdn.ventmere.com/edifier-dev/2016-11/back-end.png?v=2"/><p>Back End</p>
                     </li>
-                    <li><img src="//cdn.ventmere.com/edifier-dev/2016-11/ai.png?v=2"/><p>Artificial Intelligence</p>
+                    <li><img src="//cdn.ventmere.com/edifier-dev/2016-11/ai.png?v=2"/><p>AI</p>
                     </li>
                 </ul>
                 <div className='rect-svg'>

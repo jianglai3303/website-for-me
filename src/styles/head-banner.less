@@ -11,6 +11,10 @@
   background: #282828;
   height: 800px;
   position: relative;
+  @media(max-width: 900px){
+    padding-bottom: 50px;
+    height: auto;
+  }
 }
 .triangle {
   // The actual clipping effect
@@ -125,6 +129,36 @@
     img {
       height: 40px;
       margin-right: 20px;
+    }
+  }
+  @media(max-width: 1300px){
+    margin: 0 50px;
+    .right--triangle--area{
+      width: 35vw;
+      height: 35vw;
+    }
+  }
+  @media(max-width: 900px){
+    .right--triangle--area{
+      top: 50px;
+      transform: none;
+      width: 26vw;
+      height: 26vw;
+    }
+  }
+  @media(max-width: 500px){
+    margin: 0 auto;
+    width: 350px;
+    .right--triangle--area{
+      left: 252px;
+      top: 50px;
+      transform: none;
+      z-index: 1;
+      width: 80px;
+      height: 80px;
+    }
+    .intro-greet{
+      margin-top: 50px;
     }
   }
 }

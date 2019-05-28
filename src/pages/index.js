@@ -6,7 +6,7 @@ import SkillTree from "./comp/SkillTree"
 import "../styles/global.less"
 
 export default () => (
-  <div>
+  <div className="page-wrapper">
     <HeaderBanner />
     <SkillsIntro />
     <CaseStudy />

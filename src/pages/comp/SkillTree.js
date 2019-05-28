@@ -21,7 +21,7 @@ export default class SkillTree extends React.Component {
           <div className={"skills-tree " + this.state.enterClass}>
             <div className="skills-tree-wrapper">
               <h2 className="skills-tree-title">
-                SKILLS
+                SKILLS&nbsp;
                 <br />
                 LIST
               </h2>

@@ -3,6 +3,10 @@
   margin: 100px auto;
   font-size: 20px;
   color: #282828;
+  padding: 30px;
+  @media(max-width: 900px){
+    margin: 40px auto;
+  }
 }
 
 .skills-tree {
@@ -31,13 +35,16 @@
       left: 0;
       top: 0;
       line-height: 80px;
+      @media(max-width: 1200px){
+        left: 30px;
+      }
     }
     height: 100%;
     &::before {
       position: absolute;
       content: "";
       display: block;
-      width: 80%;
+      width: 70%;
       height: 90%;
       top: -20%;
       left: 20%;
@@ -72,5 +79,37 @@
         }
       }
     }
+  }
+  @media (max-width:900px) {
+    margin-top: 50px;
+    height: auto;
+    .skills-tree-wrapper {
+      .skills-tree-title{
+        font-size: 35px;
+        br{
+          display: none;
+          margin-left: 20px;
+        }
+      }
+      .right-list{
+        margin-left: 30px;
+        padding-top: 120px;
+        margin-bottom: 50px;
+        .skills-column {
+          h3 {
+            font-size: 18px;
+            padding-left: 10px;
+          }
+          ul {
+            padding-left: 10px;
+            li {
+              font-size: 12px;
+            }
+          }
+
+        }
+      }
+    }
+    
   }
 }
