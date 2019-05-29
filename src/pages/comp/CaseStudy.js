@@ -50,10 +50,10 @@ export default class CaseStudy extends React.Component {
       },
       {
         key: "ventmere",
-        title: "Ventmere Website",
-        subtitle: "Branding",
+        title: "Ventmere",
+        subtitle: "Official Company Website",
         describe:
-          "Build outstanding website for Ventmere. Using advanced animation to improve UX.",
+          "Build outstanding website for Ventmere. Use smooth animation and flow transition to improve UX.",
         number: "02",
         img: "/images/vmg.png",
         url: "https://ventmere.com",
@@ -61,9 +61,9 @@ export default class CaseStudy extends React.Component {
       {
         key: "ventray",
         title: "Ventray Website",
-        subtitle: "Website UX Optimization * Functions Development",
+        subtitle: "Multi-Region Site Building",
         describe:
-          "Build high quality website for Ventmere’s in-house brand. Support branding events and promotions. Enhance SEO for google ranking",
+          "Build high quality website for Ventmere’s in-house brand. Enhance SEO for google ranking",
         number: "03",
         img: "/images/ventray.png",
         url: "https://www.ventray.com/en-ca",
@@ -90,10 +90,12 @@ export default class CaseStudy extends React.Component {
           <div className={"corner-mark " + this.state.showClass}>
             <h2 className="mark-title">Developer</h2>
             <h3 className="mark-meaning">
-              CASES LIST<span className="cover" />
+              CASES LIST
+              <span className="cover" />
             </h3>
             <p>
-              international / tech / fashion<span className="cover" />
+              High Performance / Creative / Fashionable
+              <span className="cover" />
             </p>
           </div>
         </Waypoint>

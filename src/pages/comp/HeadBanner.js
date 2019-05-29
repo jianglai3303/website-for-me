@@ -22,13 +22,13 @@ export default class HeaderBanner extends React.Component {
             and animal lover
           </h3>
           <p className="contact">
-            <a>
+            <a href="mailto:jianglai3303@gmail.com">
               <img src="/images/email.png" />
             </a>
-            <a>
+            <a href="https://github.com/jianglai3303" target="_blank">
               <img src="/images/github.png" />
             </a>
-            <a>
+            <a href="https://twitter.com/LAIJIANG3303" target="_blank">
               <img src="/images/twitter.png" />
             </a>
           </p>

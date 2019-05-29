@@ -27,27 +27,42 @@ export default class SkillTree extends React.Component {
               </h2>
               <div className="right-list">
                 <div className="skills-column">
-                  <h3>BASICS</h3>
-                  <ul>
-                    <li>Linux, Git, Devops</li>
-                    <li>AWS, Digital Ocean, Linode</li>
-                  </ul>
-                </div>
-                <div className="skills-column">
                   <h3>Front End</h3>
                   <ul>
-                    <li>HTML / JS / CSS / JQUERY</li>
-                    <li>React / Vue / ANGULAR / Wordpress / Shopify</li>
-                    <li>SEO / Responsive Website / High Efficiency</li>
+                    <li>HTML, JS, CSS, Less, PostCss, Jquery</li>
+                    <li>React, MobX, Vue, Angular, RxJs, Wordpress, Shopify</li>
+                    <li>Npm , Webpack</li>
+                    <li>SVG, Three.js, CSS3, Barba.js, Sockit.io</li>
+                    <li>Mocha, Nightwatch</li>
+                    <li>SEO, Responsive Website, LightHouse</li>
                   </ul>
                 </div>
 
                 <div className="skills-column">
                   <h3>Back End</h3>
                   <ul>
-                    <li>Node.js Nest.js Express Koa</li>
-                    <li>MySQL, GraphQL, MangoDB</li>
-                    <li>PYTHON PHP JAVA</li>
+                    <li>Gatsby, Node.js, Nest.js, Django, Express, Koa</li>
+                    <li>GraphQL, NoSQL, MangoDB, MySQL</li>
+                    <li>CDN, Redis, Memcached</li>
+                    <li>Nginx, Apache, AWS, Digital Ocean, Linode</li>
+
+                    <li>Sentry, Uptimerobot</li>
+                  </ul>
+                </div>
+                <div className="skills-column">
+                  <h3>BASICS</h3>
+                  <ul>
+                    <li>Docker, Linux, Git, Devops, CI, Jenkins</li>
+
+                    <li>Agile, Jira, Asana</li>
+                    <li>PhotoShop, Sketch</li>
+                  </ul>
+                </div>
+                <div className="skills-column">
+                  <h3>Language</h3>
+                  <ul>
+                    <li>JavaScript, TypeScript, Python PHP </li>
+                    <li>Java, C#, C++</li>
                   </ul>
                 </div>
               </div>
