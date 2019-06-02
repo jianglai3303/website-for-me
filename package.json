@@ -1,7 +1,7 @@
 {
-  "name": "gatsby-starter-hello-world",
+  "name": "website-for-me",
   "private": true,
-  "description": "A simplified bare-bones starter for Gatsby",
+  "description": "A persoanl website based on Gatsby",
   "version": "0.1.0",
   "license": "MIT",
   "scripts": {
