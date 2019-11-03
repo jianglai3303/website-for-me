@@ -27,10 +27,11 @@ export default class SkillTree extends React.Component {
               </h2>
               <div className="right-list">
                 <div className="skills-column">
-                  <h3>Front End</h3>
+                  <h3>Web + APP</h3>
                   <ul>
-                    <li>HTML, JS, CSS, Less, PostCss, Jquery</li>
                     <li>React, MobX, Vue, Angular, RxJs, Wordpress, Shopify</li>
+                    <li>React Native, Expo, Eva Design System</li>
+                    <li>HTML, JS, CSS, Less, PostCss, Jquery</li>
                     <li>Npm , Webpack</li>
                     <li>SVG, Three.js, CSS3, Barba.js, Sockit.io</li>
                     <li>Mocha, Nightwatch</li>
@@ -42,10 +43,10 @@ export default class SkillTree extends React.Component {
                   <h3>Back End</h3>
                   <ul>
                     <li>Gatsby, Node.js, Nest.js, Django, Express, Koa</li>
+                    <li>Serveless Framework & AWS Lambda</li>
                     <li>GraphQL, NoSQL, MangoDB, MySQL</li>
                     <li>CDN, Redis, Memcached</li>
                     <li>Nginx, Apache, AWS, Digital Ocean, Linode</li>
-
                     <li>Sentry, Uptimerobot</li>
                   </ul>
                 </div>
@@ -53,7 +54,6 @@ export default class SkillTree extends React.Component {
                   <h3>BASICS</h3>
                   <ul>
                     <li>Docker, Linux, Git, Devops, CI, Jenkins</li>
-
                     <li>Agile, Jira, Asana</li>
                     <li>PhotoShop, Sketch</li>
                   </ul>
