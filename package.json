@@ -13,7 +13,7 @@
     "test": "jest"
   },
   "dependencies": {
-    "gatsby": "^2.6.0",
+    "gatsby": "^2.32.13",
     "gatsby-plugin-less": "^2.0.13",
     "less": "^3.9.0",
     "react": "^16.8.6",
